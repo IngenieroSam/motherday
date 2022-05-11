@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 14, 14, 0.66);
+    position: absolute;
+}
+
+.fondo {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo img {
+    width: 100%;
+    height: auto;
+    animation-name: disp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+.cont {
+    width: auto;
+    z-index: 3;
+    position: absolute;
+    background-repeat: repeat;
+    top: 20px;
+    left: 20px;
+}
+
+.cont img {
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s;
+    animation-name: latido;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes disp {
+    25% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    75% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes latido {
+    0% {
+        width: 70px;
+        height: 70px;
+    }
+    20% {
+        width: 60px;
+        height: 60px;
+    }
+    40% {
+        width: 70px;
+        height: 70px;
+    }
+    60% {
+        width: 60px;
+        height: 60px;
+    }
+    80% {
+        width: 70px;
+        height: 70px;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.design {
+    width: 100%;
+    z-index: 8;
+    position: absolute;
+    background-repeat: repeat;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+.design img {
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s;
+    animation-name: lati;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.design h1 {
+    color: aliceblue;
+    font-size: 14px;
+}
+*/
+
+h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.retroshadow {
+    color: #ffffff;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 0px #979994, 3px 3px 0px rgba(63, 63, 63, 0.9);
+}
+
+
+/* Comienzo del Contenido */
+
+.Escrito {
+    width: 96%;
+    height: 94%;
+    position: absolute;
+    background-color: rgba(128, 0, 128, 0.1008);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.txtOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    animation-name: textuno;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    font-size: 26px;
+    width: 90%;
+    height: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.txtTwo {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    animation-name: textdos;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    font-size: 26px;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    height: 90%;
+}
+
+.txtThree {
+    position: absolute;
+    color: rgb(0, 255, 21);
+    animation-name: texttres;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    font-size: 26px;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    height: 90%;
+}
+
+.txtFour {
+    position: absolute;
+    color: rgb(246, 255, 0);
+    animation-name: textcuatro;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    font-size: 26px;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    height: 90%;
+}
+
+.txtFive {
+    position: absolute;
+    color: rgb(255, 0, 195);
+    animation-name: textcinco;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    font-size: 26px;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    height: 90%;
+}
+
+@keyframes textuno {
+    0% {
+        color: #ffffff;
+        overflow-y: scroll;
+    }
+    19% {
+        color: #ffffff;
+        overflow-y: scroll;
+    }
+    20% {
+        color: transparent;
+        overflow: hidden;
+    }
+    40% {
+        color: transparent;
+        overflow: hidden;
+    }
+    60% {
+        color: transparent;
+        overflow: hidden;
+    }
+    80% {
+        color: transparent;
+        overflow: hidden;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: white;
+        overflow-y: scroll;
+    }
+}
+
+@keyframes textdos {
+    0% {
+        color: transparent;
+        overflow: hidden;
+    }
+    19% {
+        color: transparent;
+        overflow: hidden;
+    }
+    20% {
+        color: white;
+        overflow-y: scroll;
+    }
+    39% {
+        color: white;
+        overflow-y: scroll;
+    }
+    40% {
+        color: transparent;
+        overflow: hidden;
+    }
+    60% {
+        color: transparent;
+        overflow: hidden;
+    }
+    80% {
+        color: transparent;
+        overflow: hidden;
+    }
+    100% {
+        color: transparent;
+        overflow: hidden;
+    }
+}
+
+@keyframes texttres {
+    0% {
+        color: transparent;
+        overflow: hidden;
+    }
+    20% {
+        color: transparent;
+        overflow: hidden;
+    }
+    39% {
+        color: transparent;
+        overflow: hidden;
+    }
+    40% {
+        color: white;
+        overflow-y: scroll;
+    }
+    59% {
+        color: white;
+        overflow-y: scroll;
+    }
+    60% {
+        color: transparent;
+        overflow: hidden;
+    }
+    80% {
+        color: transparent;
+        overflow: hidden;
+    }
+    100% {
+        color: transparent;
+        overflow: hidden;
+    }
+}
+
+@keyframes textcuatro {
+    0% {
+        color: transparent;
+        overflow: hidden;
+    }
+    20% {
+        color: transparent;
+        overflow: hidden;
+    }
+    40% {
+        color: transparent;
+        overflow: hidden;
+    }
+    59% {
+        color: transparent;
+        overflow: hidden;
+    }
+    60% {
+        color: white;
+        overflow-y: scroll;
+    }
+    79% {
+        color: white;
+        overflow-y: scroll;
+    }
+    80% {
+        color: transparent;
+        overflow: hidden;
+    }
+    100% {
+        color: transparent;
+        overflow: hidden;
+    }
+}
+
+@keyframes textcinco {
+    0% {
+        color: transparent;
+        overflow: hidden;
+    }
+    20% {
+        color: transparent;
+        overflow: hidden;
+    }
+    40% {
+        color: transparent;
+        overflow: hidden;
+    }
+    60% {
+        color: transparent;
+        overflow: hidden;
+    }
+    79% {
+        color: transparent;
+        overflow: hidden;
+    }
+    80% {
+        color: white;
+        overflow-y: scroll;
+    }
+    99% {
+        color: white;
+        overflow-y: scroll;
+    }
+    100% {
+        color: transparent;
+        overflow: hidden;
+    }
+}
+
+
+/* Mod Scroll*/
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track-piece,
+ ::-webkit-scrollbar-track,
+ ::-webkit-scrollbar-corner,
+::-webkit-scrollbar-button {
+    background-color: transparent;
+    color: transparent;
+}
