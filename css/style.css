@@ -150,6 +150,8 @@ h1 {
     justify-content: center;
     text-align: center;
     z-index: 2;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .txtOne {
@@ -164,7 +166,7 @@ h1 {
     animation-iteration-count: infinite;
     font-size: 26px;
     width: 90%;
-    height: 90%;
+    height: auto;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -183,7 +185,7 @@ h1 {
     justify-content: center;
     text-align: left;
     width: 90%;
-    height: 90%;
+    height: auto;
 }
 
 .txtThree {
@@ -200,7 +202,7 @@ h1 {
     justify-content: center;
     text-align: left;
     width: 90%;
-    height: 90%;
+    height: auto;
 }
 
 .txtFour {
@@ -217,7 +219,7 @@ h1 {
     justify-content: center;
     text-align: left;
     width: 90%;
-    height: 90%;
+    height: auto;
 }
 
 .txtFive {
@@ -234,7 +236,7 @@ h1 {
     justify-content: center;
     text-align: left;
     width: 90%;
-    height: 90%;
+    height: auto;
 }
 
 @keyframes textuno {
@@ -417,8 +419,24 @@ h1 {
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track-piece,
  ::-webkit-scrollbar-track,
- ::-webkit-scrollbar-corner,
-::-webkit-scrollbar-button {
+ ::-webkit-scrollbar-corner {
     background-color: transparent;
     color: transparent;
+}
+
+::-webkit-scrollbar-button {
+    color: blue;
+}
+
+
+/* mediaquerys para responsive*/
+
+@media screen and (max-width:800px) {
+    .txtFive,
+    .txtFour,
+    .txtThree,
+    .txtTwo,
+    .txtOne {
+        font-size: 16px;
+    }
 }
